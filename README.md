@@ -4,7 +4,14 @@
 ## Tabla de contenidos:
 ---
 
-- [Reglas de negocio](#reglas-de-negocio)
-- [Diagrama Entidad-Relacion](#diagrama-entidad-relacion)
-- [Diagrama Relacional](#diagrama-relacional)
-- [Diagrama Relacional normalizado](#diagrama-relacional-normalizado)
+* [Reglas de negocio](#reglas-de-negocio)
+* [Tabla ER](#tabla-er)
+* [Diagrama Entidad-Relacion](#diagrama-entidad-relacion)
+* [Diagrama Relacional](#diagrama-relacional)
+* [Diagrama Relacional normalizado](#diagrama-relacional-normalizado)
+
+
+
+Reglas de negocio
+
+
