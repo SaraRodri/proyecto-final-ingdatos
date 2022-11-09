@@ -5,8 +5,8 @@
 ---
 
 * [Reglas de negocio](#reglas-de-negocio)
-* [Tabla ER](#tabla-er)
-* [Diagrama Entidad-Relacion](#diagrama-entidad-relacion)
+* [Tabla Entidad Relación](#tabla-er)
+* [Diagrama Entidad Relación](#diagrama-entidad-relacion)
 * [Diagrama Relacional](#diagrama-relacional)
 * [Diagrama Relacional normalizado](#diagrama-relacional-normalizado)
 
@@ -43,9 +43,12 @@
 14. Generar un ranking de los libros por autor. 
 
 
-### Tabla ER
+### Tabla Entidad Relación
 <p align="center"><img src="img/tabla-er.PNG"/></p> 
 
+### Diagrama Entidad Relación
+
+<p align="center"><img src="img/er.PNG"/></p> 
 
 ### Diagrama Relacional
 
