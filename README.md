@@ -12,7 +12,7 @@
 
 
 
-Reglas de negocio
+### Reglas de negocio 
 
 1. Todos los libros tienen una editorial, titulo, año de publicación, número de páginas y autor. 
 
@@ -43,3 +43,14 @@ Reglas de negocio
 14. Generar un ranking de los libros por autor. 
 
 
+### Tabla ER
+<p align="center"><img src="img/tabla-er.PNG"/></p> 
+
+
+### Diagrama Relacional
+
+<p align="center"><img src="img/relacional.PNG"/></p> 
+
+### Diagrama Relacional Normalizado
+
+<p align="center"><img src="img/relacional-normalizado.jpeg"/></p> 
