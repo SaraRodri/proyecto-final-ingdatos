@@ -1,0 +1,109 @@
+----Tablas actualizadas
+CREATE TABLE categoria(
+	id int,
+	nombre text,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE autor(
+	id int,
+	nombre text,
+	fecha_nto date,
+	PRIMARY KEY (id)
+)
+
+CREATE TABLE ubicacion(
+	id int,
+	ubicacion text,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE editorial(
+	id int,
+	nombre text,
+	id_ubicacion int,
+	PRIMARY KEY (id),
+	FOREIGN KEY (id_ubicacion) REFERENCES ubicacion(id)
+);
+CREATE TABLE usuario(
+	id varchar(80),
+	nombre varchar(80),
+	PRIMARY KEY (id)
+);
+CREATE TABLE libro (
+	id varchar(50),
+	titulo text,
+	publicacion_yt int,
+	num_paginas int,
+	id_categoria int,
+	id_editorial int,
+	id_autor int,
+	PRIMARY KEY(id),
+	FOREIGN KEY (id_categoria) REFERENCES categoria(id),
+	FOREIGN KEY (id_editorial) REFERENCES editorial(id),
+	FOREIGN KEY (id_autor) REFERENCES autor(id)
+);
+
+
+CREATE TABLE evaluar(
+	id_Usuario int,
+	id_libro int,
+	calificacion int,
+	PRIMARY KEY(id_Usuario,id_libro),
+	FOREIGN KEY (id_Usuario) REFERENCES usuario(id),
+	FOREIGN KEY (id_libro) REFERENCES libro(id)
+);
+
+
+--------CARGA MASIVA
+---Carga masiva de la tabla categoria
+COPY categoria FROM 'C:\bases de datos\categoria.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+---Carga masiva de la tabla usuario
+COPY usuario FROM 'C:\bases de datos\usuario_f.csv' WITH DELIMITER ';' CSV HEADER;--check
+
+--Carga masiva de la tabla autor
+COPY autor FROM 'C:\bases de datos\autor.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+----Carga masiva de la tabla ubicacion
+COPY ubicacion FROM 'C:\bases de datos\ubicacion.csv' WITH DELIMITER ',' CSV HEADER; --check
+
+--Carga masiva de la tabla editorial
+COPY editorial FROM 'C:\bases de datos\editorial.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+--Carga masiva de la tabla libro
+COPY libro FROM 'C:\bases de datos\libro.csv' WITH DELIMITER ';' CSV HEADER; 
+
+---------------------------------
+import psycopg2
+
+conexion = psycopg2.connect(
+host= "localhost",
+user= "postgres",
+password= "123456789",
+database= "BD Amazon Books",
+port = 5432
+)
+
+############### Base de datos de la tabla -> autor ########
+#Utilizar cursor
+cursor=conexion.cursor()
+
+#Crear sentencia SQL
+sql ='SELECT * FROM autor'
+
+#Utilizar metodo execute
+cursor.execute(sql)
+
+#Mostrar resultado
+registro = cursor.fetchall()
+print(registro)
+print("\n")
+
+#Cerrar la conexion
+cursor.close()
+conexion.close()
+
+
+
+
