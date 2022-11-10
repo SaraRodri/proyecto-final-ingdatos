@@ -1,0 +1,20 @@
+---Carga masiva de la tabla categoria
+COPY categoria FROM 'C:\bases de datos\categoria.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+---Carga masiva de la tabla usuario
+COPY usuario FROM 'C:\bases de datos\usuario_f.csv' WITH DELIMITER ';' CSV HEADER;--check
+
+--Carga masiva de la tabla autor
+COPY autor FROM 'C:\bases de datos\autor.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+----Carga masiva de la tabla ubicacion
+COPY ubicacion FROM 'C:\bases de datos\ubicacion.csv' WITH DELIMITER ',' CSV HEADER; --check
+
+--Carga masiva de la tabla editorial
+COPY editorial FROM 'C:\bases de datos\editorial.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+--Carga masiva de la tabla libro
+COPY libro FROM 'C:\bases de datos\libro.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+--Carga masiva de la tabla evaluar
+COPY libro FROM 'C:\bases de datos\evaluar.csv' WITH DELIMITER ';' CSV HEADER; --check
