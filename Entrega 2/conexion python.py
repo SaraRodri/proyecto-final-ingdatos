@@ -58,6 +58,16 @@ print("\n")
 cursor.close()
 conexion.close()
 
+############### Base de datos de la tabla -> editorial ########
+cursor=conexion.cursor()
+sql ='SELECT * FROM editorial'
+cursor.execute(sql)
+registro = cursor.fetchall()
+print(registro)
+print("\n")
+cursor.close()
+conexion.close()
+
 ############### Base de datos de la tabla -> libro ########
 cursor=conexion.cursor()
 sql ='SELECT * FROM libro'
