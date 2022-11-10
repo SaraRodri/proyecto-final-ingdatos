@@ -2,13 +2,12 @@
 <p align="center"> Juan Esteban Gonzalez, Valentina López y Sara Rodríguez </p>
 
 ## Tabla de contenidos:
----
 
-* [Reglas de negocio](#reglas-de-negocio)
-* [Tabla Entidad Relación](#tabla-er)
-* [Diagrama Entidad Relación](#diagrama-entidad-relacion)
-* [Diagrama Relacional](#diagrama-relacional)
-* [Diagrama Relacional normalizado](#diagrama-relacional-normalizado)
+- [Reglas de negocio](#reglas-de-negocio)
+- [Tabla Entidad Relacion](#tabla-er)
+- [Diagrama Entidad Relacion](#diagrama-entidad-relacion)
+- [Diagrama Relacional](#diagrama-relacional)
+- [Diagrama Relacional normalizado](#diagrama-relacional-normalizado)
 
 
 
@@ -43,12 +42,15 @@
 14. Generar un ranking de los libros por autor. 
 
 
-### Tabla Entidad Relación
+### Tabla Entidad Relacion
+
 <p align="center"><img src="img/tabla-er.PNG"/></p> 
+
 
 ### Diagrama Entidad Relación
 
 <p align="center"><img src="img/er.PNG"/></p> 
+
 
 ### Diagrama Relacional
 
