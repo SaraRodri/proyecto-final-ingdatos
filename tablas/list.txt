@@ -1,7 +1,0 @@
-usuario
-libro
-editorial
-ubicacion
-evaluar
-autor
-categoria
