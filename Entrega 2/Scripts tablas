@@ -47,7 +47,7 @@ CREATE TABLE libro (
 CREATE TABLE evaluar(
 	id_Usuario text,
 	id_libro text,
-	calificacion int,
+	calificacion real,
 	PRIMARY KEY(id_Usuario,id_libro),
 	FOREIGN KEY (id_Usuario) REFERENCES usuario(id),
 	FOREIGN KEY (id_libro) REFERENCES libro(id)
