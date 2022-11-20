@@ -26,12 +26,12 @@ CREATE TABLE editorial(
 	FOREIGN KEY (id_ubicacion) REFERENCES ubicacion(id)
 );
 CREATE TABLE usuario(
-	id varchar(80),
+	id text,
 	nombre varchar(80),
 	PRIMARY KEY (id)
 );
 CREATE TABLE libro (
-	id varchar(50),
+	id text,
 	titulo text,
 	publicacion_yt int,
 	num_paginas int,
@@ -46,8 +46,8 @@ CREATE TABLE libro (
 
 
 CREATE TABLE evaluar(
-	id_Usuario int,
-	id_libro int,
+	id_Usuario text,
+	id_libro text,
 	calificacion int,
 	PRIMARY KEY(id_Usuario,id_libro),
 	FOREIGN KEY (id_Usuario) REFERENCES usuario(id),
@@ -63,16 +63,19 @@ COPY categoria FROM 'C:\bases de datos\categoria.csv' WITH DELIMITER ';' CSV HEA
 COPY usuario FROM 'C:\bases de datos\usuario_f.csv' WITH DELIMITER ';' CSV HEADER;--check
 
 --Carga masiva de la tabla autor
-COPY autor FROM 'C:\bases de datos\autor.csv' WITH DELIMITER ';' CSV HEADER; --check
+COPY autor FROM 'C:\bases de datos\autor_f.csv' WITH DELIMITER ';' CSV HEADER; --check
 
 ----Carga masiva de la tabla ubicacion
 COPY ubicacion FROM 'C:\bases de datos\ubicacion.csv' WITH DELIMITER ',' CSV HEADER; --check
 
 --Carga masiva de la tabla editorial
-COPY editorial FROM 'C:\bases de datos\editorial.csv' WITH DELIMITER ';' CSV HEADER; --check
+COPY editorial FROM 'C:\bases de datos\editorial_f.csv' WITH DELIMITER ';' CSV HEADER; --check
 
 --Carga masiva de la tabla libro
 COPY libro FROM 'C:\bases de datos\libro.csv' WITH DELIMITER ';' CSV HEADER; 
+
+--Carga masiva de la tabla evaluar
+COPY libro FROM 'C:\bases de datos\evaluar_f.csv' WITH DELIMITER ',' CSV HEADER; 
 
 ---------------------------------
 import psycopg2
