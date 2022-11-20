@@ -1,3 +1,4 @@
+----Tablas actualizadas
 CREATE TABLE categoria(
 	id int,
 	nombre text,
@@ -9,7 +10,7 @@ CREATE TABLE autor(
 	nombre text,
 	fecha_nto date,
 	PRIMARY KEY (id)
-);
+)
 
 CREATE TABLE ubicacion(
 	id int,
@@ -47,7 +48,7 @@ CREATE TABLE libro (
 CREATE TABLE evaluar(
 	id_Usuario text,
 	id_libro text,
-	calificacion real,
+	calificacion int,
 	PRIMARY KEY(id_Usuario,id_libro),
 	FOREIGN KEY (id_Usuario) REFERENCES usuario(id),
 	FOREIGN KEY (id_libro) REFERENCES libro(id)
