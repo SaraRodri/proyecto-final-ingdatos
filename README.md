@@ -60,3 +60,6 @@
 Cabe resaltar que en este diagrama, algunos varchar han aumentado su tamaño, pues al realizar la carga masiva nos dimos cuenta que la cantidad de caracteres que habíamos asignado para algunos datos era insuficiente
 
 <p align="center"><img src="img/relacional-normalizado.jpeg"/></p> 
+
+## Base de datos
+
