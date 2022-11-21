@@ -6,6 +6,7 @@ import pandas as pd
 from conexion import conexion
 import sql_dash as sql
 
+external_stylesheets = ["https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"]
 
 # Inicializacion app dash
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
