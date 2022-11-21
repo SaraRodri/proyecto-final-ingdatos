@@ -1,10 +1,7 @@
 import psycopg2
-
 class conexion:
-
     def __init__(self):
         self.connection = None
-    
     def openConnection(self):
         try:
             self.connection = psycopg2.connect(user="postgres",
@@ -14,6 +11,5 @@ class conexion:
                                                port="5432")
         except Exception as e:
             print (e)
-
     def closeConnection(self):
         self.connection.close()
