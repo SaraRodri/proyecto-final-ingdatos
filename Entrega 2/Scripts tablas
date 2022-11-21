@@ -10,7 +10,7 @@ CREATE TABLE autor(
 	nombre text,
 	fecha_nto date,
 	PRIMARY KEY (id)
-)
+);
 
 CREATE TABLE ubicacion(
 	id int,
