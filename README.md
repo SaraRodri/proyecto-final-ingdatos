@@ -62,4 +62,13 @@ Cabe resaltar que en este diagrama, algunos varchar han aumentado su tamaño, pu
 <p align="center"><img src="img/relacional-normalizado.jpeg"/></p> 
 
 ## Base de datos
+En la carpeta Entrega 2 se encuentra el archivo de DDL Scripts_tablas.sql donde se encuentran las sentencias sql para la creacion de las tablas: Autor, categoria,editorial,evaluar,libro,ubicación.
+
+## Carga Masiva
+En la carpeta Entrega 2 se encuentra el archivo de DDL Carga_masiva_de_datos.sql donde se encuentran las sentencias sql para la la carga de datos desde los diferentes archivos csv  con los datos de la tablas de la sigunete forma
+~~~
+---Carga masiva de la tabla categoria
+COPY categoria FROM 'C:tablas_f\categoria_f.csv' WITH DELIMITER ';' CSV HEADER; --check
+
+~~~
 
