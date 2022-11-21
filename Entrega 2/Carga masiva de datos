@@ -17,4 +17,4 @@ COPY editorial FROM 'proyecto-final-ingdatos\tablas_f\editorial_f.csv' WITH DELI
 COPY libro FROM 'proyecto-final-ingdatos\tablas_f\libro.csv' WITH DELIMITER ';' CSV HEADER; 
 
 --Carga masiva de la tabla evaluar
-COPY libro FROM 'proyecto-final-ingdatos\tablas_f\evaluar_f.csv' WITH DELIMITER ',' CSV HEADER; 
+COPY evaluar FROM 'proyecto-final-ingdatos\tablas_f\evaluar_f.csv' WITH DELIMITER ',' CSV HEADER; 
