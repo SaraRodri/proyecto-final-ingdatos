@@ -34,7 +34,7 @@ con2.closeConnection()
 cEditorial = pd.DataFrame(query, columns=["round", "count"])
 
 # Grafico pie
-figPieCed = px.pie(cEditorial.head(20), x="round", y="count")
+figPieCed = px.pie(cEditorial.head(20), names="round", values="count")
 #Grafico linea
 figLineCed = px.line(cEditorial.head(20), x="count", y="count")
 
@@ -90,7 +90,7 @@ cat = pd.DataFrame(query, columns=["nombre", "count"])
 # Grafico barras
 figBarCat = px.bar(cat.head(20), x="nombre", y="count")
 # Grafico pie
-figPieCat = px.pie(cat.head(20), x="nombre", y="count")
+figPieCat = px.pie(cat.head(20), name="nombre", values="count")
 
 # Layout 
 app.layout = html.Div(children=[
