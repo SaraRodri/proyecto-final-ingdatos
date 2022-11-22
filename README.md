@@ -83,7 +83,7 @@ Por medio de los diagramas de pie y de líneas, este análisis permite ver cuant
 <p align="center"><img src="img/Calificacion de autores.jpeg"/></p> 
 <p align="center"><img src="img/Calificacion Autores.jpeg"/></p> 
 
-<p align="center"><img src="img/calificacion editoriales.jpeg.jpeg"/></p> 
+<p align="center"><img src="img/calificacion editoriales.jpeg"/></p> 
 <p align="center"><img src="img/CALIFICACION EDITORIALES (2).jpeg"/></p> 
 
 Como se ve en las gráficas, en Calificación autores, más del 86% de los autores tienen una calificación de entre 4 y 5 puntos. Pasa de forma similar en Calificación editoriales, pues más del 89% de las editoriales tienen una calificación entre 4 y 5 puntos, es decir, la calidad literaria percibida por los lectores de Amazon es bastante alta. Esto también puede indicar que las personas que tienen buenas opiniones acerca de un libro son más propensas a dejar una reseña en la página.  
