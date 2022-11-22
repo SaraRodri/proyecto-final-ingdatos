@@ -112,7 +112,7 @@ Se obtuvo un promedio de los libros con las mejores calificaciones por año, est
 
 Algo a destacar de la siguiente gráfica es que antes de 1800 la cantidad de libros publicados es mínima, y al momento de graficar termina dispersando de forma desproporcional los datos, por lo cual, para poder visualizar de mejor forma los datos, esta parte fue removida 
 
-<p align="center"><img src="img/libros_año.jpeg"/></p> 
+<p align="center"><img src="img/libros por año.jpeg"/></p> 
 
 
 Como se puede observar en la gráfica de líneas, a mediados de la década del 2000 es cuando más libros se han publicado en la plataforma, siendo esta época cuando el internet se volvió masivo, y la digitalización se convirtió en algo esencial (Abbate, J). Así mismo, han sido estos últimos años cuando es común ver libros publicados solo digitalmente. Aunque también es interesante analizar que, mientras más se acerca la gráfica a nuestra actualidad, la cantidad de libros se ve reducida. 
