@@ -38,3 +38,9 @@ def categoria():
             from libro INNER JOIN categoria on libro.id_categoria=categoria.id
             GROUP BY categoria.nombre
             ORDER BY COUNT (libro.id) DESC;"""
+
+def prom_aut():
+    return """SELECT autor.nombre,AVG(promedio.avg) as PROMEDIO
+        FROM (libro inner join autor ON libro.id_autor=autor.id) INNER JOIN (SELECT id_libro, AVG(calificacion) FROM evaluar GRoup by id_libro) AS promedio ON Libro.id=promedio.id_libro
+        GROUP BY autor.nombre
+        ORDER BY PROMEDIO DESC;"""
