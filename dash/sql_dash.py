@@ -27,8 +27,14 @@ def librosEditorial():
                 GROUP BY autor.id
                 ORDER BY count(autor.id) DESC;"""
 
-def calificacion():
+def calificacion_yr():
     return """SELECT libro.publicacion_yt,AVG(prom.cal)
             FROM libro INNER JOIN( SELECT id_libro, AVG(calificacion) as cal FROM evaluar GRoup by id_libro) as prom on libro.id=prom.id_libro
             GROUP BY libro.publicacion_yt
             ORDER BY AVG(prom.cal) DESC;"""
+
+def categoria():
+    return """SELECT categoria.nombre, COUNT (libro.id)
+            from libro INNER JOIN categoria on libro.id_categoria=categoria.id
+            GROUP BY categoria.nombre
+            ORDER BY COUNT (libro.id) DESC;"""
