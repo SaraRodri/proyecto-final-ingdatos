@@ -19,13 +19,15 @@ def librosAutor():
     return """SELECT autor.nombre,count(autor.id)
             FROM libro INNER JOIN autor on libro.id_autor=autor.id
             GROUP BY autor.id
-            ORDER BY count(autor.id) DESC;"""
+            ORDER BY count(autor.id) DESC
+            WHERE autor.nombre != N/A;"""
 
 def librosEditorial():
-    return """SELECT autor.nombre,count(autor.id)
-                FROM libro INNER JOIN autor on libro.id_autor=autor.id
-                GROUP BY autor.id
-                ORDER BY count(autor.id) DESC;"""
+    return """SELECT editorial.nombre,count(editorial.id)
+                FROM libro INNER JOIN editorial on libro.id_editorial=editorial.id
+                GROUP BY editorial.id
+                ORDER BY count(editorial.id) DESC
+                WHERE editorial.nombre != N/A;;"""
 
 def calificacion_yr():
     return """SELECT libro.publicacion_yt,AVG(prom.cal)
@@ -37,7 +39,8 @@ def categoria():
     return """SELECT categoria.nombre, COUNT (libro.id)
             from libro INNER JOIN categoria on libro.id_categoria=categoria.id
             GROUP BY categoria.nombre
-            ORDER BY COUNT (libro.id) DESC;"""
+            ORDER BY COUNT (libro.id) DESC
+            WHERE categoria.nombre != N/A;;"""
 
 def prom_aut():
     return """SELECT autor.nombre,AVG(promedio.avg) as PROMEDIO
