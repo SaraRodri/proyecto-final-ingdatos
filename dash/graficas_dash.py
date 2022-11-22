@@ -33,6 +33,8 @@ cEditorial = pd.DataFrame(query, columns=["round", "count"])
 # Grafico pie
 figPieCed = px.pie(cEditorial.head(20), names="round", values="count")
 
+figLineCed = px.line(cEditorial.head(20), x="round", y="count")
+
 # Libros por autor
 con3 = conexion()
 con3.openConnection()
@@ -58,10 +60,10 @@ con5 = conexion()
 con5.openConnection()
 query = pd.read_sql_query(sql.calificacion_yr(), con5.connection)
 con5.closeConnection()
-cal_yr = pd.DataFrame(query, columns=["publicacion_yt", "PROMEDIO"])
+cal_yr = pd.DataFrame(query, columns=["publicacion_yt", "count"])
 
 # Grafico barras
-figBarLinac = px.bar(cal_yr.head(20), x="publicacion_yt", y="PROMEDIO")
+figBarLib = px.line(cal_yr, x="publicacion_yt", y="count")
 
 # Promedio por autores
 con6 = conexion()
@@ -189,33 +191,18 @@ app.layout = html.Div(children=[
             html.Div(className="col-12 col-xl-6", children=[
                 html.Div(className="card border-info", children=[
                     html.Div(className="card-header", children=[
-                        html.H2(children='AVG de Año de publicación'),
+                        html.H2(children='Numero de libros por año'),
                     ]),
                     html.Div(className="card-body", children=[
                         dcc.Graph(
                             id='LineAC',
-                            figure=figBarLinac
+                            figure=figBarLib
                         ),
                     ]),
 
                 ]),
             ]),
 
-            # Col for bar
-            html.Div(className="col-12 col-xl-6", children=[
-                html.Div(className="card border-info", children=[
-                    html.Div(className="card-header", children=[
-                        html.H2(children='Promedio de libros por autor'),
-                    ]),
-                    html.Div(className="card-body", children=[
-                        dcc.Graph(
-                            id='BarPromAut',
-                            figure=figBarPromAut
-                        ),
-                    ]),
-
-                ]),
-            ]),
 
             # Col for bar
             html.Div(className="col-12 col-xl-6", children=[
