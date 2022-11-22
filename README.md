@@ -125,7 +125,8 @@ Clasificar libros por categoría
 El objetivo de esta clasificación por medio de diagrama de barras es satisfacer al usuario para darle información más detallada sobre un determinado tema de interés entre miles de opciones. Amazon podrá ver cuáles son las categorías en donde más tienen libros, ver cuáles son sus carencias y así enriquecer a estas si lo ve necesario. 
 
 
-<p align="center"><img src="libros categoria.jpeg"/></p>
+<p align="center"><img src="img/libros categoria.jpeg"/></p>
+
 
 En el diagrama se puede observar que la ficción es el género donde se encuentran mayor cantidad de libros, seguidos por religión e historia. Esto nos indica que, además de ser la categoría más leída, la ficción, al permitirnos abstraernos de nuestra realidad, nos atrae de sobremanera. Además, la religión es el segundo género más frecuente, esto se evidencia por el hecho de que la biblia es uno de los libros más vendidos en todo el mundo (El Universal, 2018).  
 
